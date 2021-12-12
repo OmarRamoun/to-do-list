@@ -81,14 +81,7 @@ export default class Task {
     // Add editing functionality
     editTask.addEventListener('keyup', (e) => {
       if (e.keyCode === 13) {
-        span.innerText = editTask.value;
-        td1.replaceChild(span, editTask);
-        imgBot.classList.toggle('opacity-0');
-        imgTop.classList.toggle('opacity-0');
-        imgTop.classList.toggle('cursor-move');
-        tr.classList.remove('bg-secondary');
-        this.description = editTask.value;
-        Task.saveLocalTasks();
+        this.edit(editTask.value, td1, span, editTask, imgBot, imgTop, tr);
       }
     });
 
@@ -133,6 +126,17 @@ export default class Task {
     });
     Task.saveLocalTasks();
     return this;
+  }
+
+  edit(value, td1, span, editTask, imgBot, imgTop, tr) {
+    span.innerText = value;
+    td1.replaceChild(span, editTask);
+    imgBot.classList.toggle('opacity-0');
+    imgTop.classList.toggle('opacity-0');
+    imgTop.classList.toggle('cursor-move');
+    tr.classList.remove('bg-secondary');
+    this.description = value;
+    Task.saveLocalTasks();
   }
 
   static clearAllCompleted() {
