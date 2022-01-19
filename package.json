@@ -1,13 +1,14 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
-  "description": "[![Ramoun's badge](https://img.shields.io/static/v1?label=BY&message=RAMOUN&color=birghtgreen)](https://mrramoun.github.io)",
+  "description": "a to-do list app that allows you to add, delete, and edit items",
   "private": true,
   "scripts": {
     "test": "jest --coverage",
     "watch": "jest --watchAll --coverage",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "packs": "npm install package-lock.json --save-dev"
   },
   "repository": {
     "type": "git",
