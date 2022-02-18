@@ -4,11 +4,11 @@
 
 To-Do List helps you organize your tasks. It lists the things that you need to do and allows you to mark them as completed. Built using ES6 and Webpack, and it has the following features:
 
-- :heavy_plus_sign: Adding a new item.
-- :x: Removing a selected item.
-- :heavy_check_sign: Marking a selected item as complete.
-- Removing all items marked as complete at once.
-- Reordering a selected item (as drag-and-drop).
+- ➕ Adding a new item.
+- ❌ Removing a selected item.
+- ✔️ Marking a selected item as complete.
+- 🔴 Removing all items marked as complete at once.
+- 🚮 Reordering a selected item (as drag-and-drop).
 
 ## Screenshots
 
